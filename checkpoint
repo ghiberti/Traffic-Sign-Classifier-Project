@@ -1,0 +1,2 @@
+model_checkpoint_path: "CarND-Traffic-Sign-Classifier-Project"
+all_model_checkpoint_paths: "CarND-Traffic-Sign-Classifier-Project"
