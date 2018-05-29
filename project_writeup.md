@@ -20,11 +20,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/barchart.png "Bar chart"
 [image2]: ./examples/color.png "Original image"
 [image3]: ./examples/grayscale.png "Grayscale image"
-[image4]: ./data/example/keep_right.jpg "Keep Right"
-[image5]: ./data/example/limit_70.jpg "Limit 70"
-[image6]: ./data/example/priority.jpg "Priority Road"
-[image7]: ./data/example/roundabout.jpg "Roundabout"
-[image8]: ./data/example/stop.jpg "Stop"
+[image4]: ./data/examples/keep_right.jpg "Keep Right"
+[image5]: ./data/examples/limit_70.jpg "Limit 70"
+[image6]: ./data/examples/priority.jpg "Priority Road"
+[image7]: ./data/examples/roundabout.jpg "Roundabout"
+[image8]: ./data/examples/stop.jpg "Stop"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -118,12 +118,9 @@ After multiple runs experimenting with different Optimizers and numbers of epoch
 
 My final model results were:
 
-* Training Accuracy = 0.984
-* Validation Accuracy = 0.940
-* Training Accuracy = 0.914
-
-
- 
+* Training Accuracy = 0.986
+* Validation Accuracy = 0.936
+* Training Accuracy = 0.913 
 
 ### Test a Model on New Images
 
@@ -153,20 +150,56 @@ The model was able to correctly guess all 5 examples. Results compare favoribly 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+First Image: Limit 70km/h
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| .95         			| Limit 70km/h 									| 
+| .03    				| Limit 20km/h 									|
+| .007					| Limit 120km/h									|
+| .007	      			| Limit 30km/h					 				|
+| .001				    | Roundabout mandatory 							|
 
 
-For the second image ... 
+Second Image: Keep Right
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .100        			| Keep Right 									| 
+| .000   				| No Vehicles 									|
+| .000					| Dangerous curve to right						|
+| .000	      			| Priority Road 				 				|
+| .000				    | Yield               							|
+
+Third Image: Priority Road
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .99        			| Priority Road									| 
+| .000   				| Roundabout mandatory							|
+| .000					| Right-of-way at the next intersection			|
+| .000	      			| General caution 				 				|
+| .000				    | End of all speed and passing limits			|
+
+Fourth Image: Roundabout mandatory
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .97         			| Roundabout mandatory							| 
+| .02    				| Priority road									|
+| .001  				| Limit 30km/h	    							|
+| .000	      			| Go straight or left			 				|
+| .000				    | Limit 100km/h        							|
+
+Fifth Image: Stop
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .40        			| Stop       									| 
+| .34   				| No entry   									|
+| .14					| Keep right    								|
+| .05	      			| Turn left ahead				 				|
+| .03   			    | Priority road        							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
