@@ -15,6 +15,6 @@ The goals / steps of this project were the following:
 Contents:
 * Traffic_Sign_Classifier.ipynb - Jupyter notebook that contains all the code written for the project
 * /data - contains image files which were used during the project
-* writeup.md - contains project pipeline summary and reflections on the project outcome
-* signnames.csvttps://www.udacity.com/course/writing-readmes--ud777).
+* /examples - contains images used in writeup
+* project_writeup.md - contains project pipeline summary and reflections on the project outcome
 
