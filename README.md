@@ -1,5 +1,4 @@
 ## Project: Build a Traffic Sign Recognition Program
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)Overview
 ---
 
 This project contains code and media related to the "Finding lane lines on the road" project for Udacity Self Driving Car NanoDegree.
