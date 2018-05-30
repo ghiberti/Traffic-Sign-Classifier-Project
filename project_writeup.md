@@ -95,10 +95,10 @@ My final model consisted of the following layers:
 
 I used the following hyperparameters together with Adam Optimizer for training the model:
 
-epochs = 20
-batch size = 512
-dropout keep probability = 0.5
-learning rate = 0.001
+* epochs = 20
+* batch size = 512
+* dropout keep probability = 0.5
+* learning rate = 0.001
 
 I decided the number of epochs and Adam Optimizer after multiple trial runs. Adam optimizer performed best for fastest convergence, and validation accuracy appeared to stabilize after 20 epochs.
 
